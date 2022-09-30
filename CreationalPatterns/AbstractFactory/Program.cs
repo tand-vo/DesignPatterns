@@ -1,0 +1,13 @@
+﻿Console.WriteLine("if the application is configured to working with SQL Server database");
+IDatabaseFactory sqlServerDBFactory = new SQLServerDBFactory();
+IDBCommand sqlServerDBCommand = sqlServerDBFactory.CreateCommandObject();
+IDBConnection sqlServerDBConnection = sqlServerDBFactory.CreateConnectionObject();
+sqlServerDBConnection.Open();
+sqlServerDBCommand.Execute();
+Console.WriteLine("================================================================");
+Console.WriteLine("if the application is configured to working with Oracle database");
+IDatabaseFactory oracleDBFactory = new OracleDBFactory();
+IDBCommand oracleDBCommand = oracleDBFactory.CreateCommandObject();
+IDBConnection oracleDBConnection = oracleDBFactory.CreateConnectionObject();
+oracleDBConnection.Open();
+oracleDBCommand.Execute();
