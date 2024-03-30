@@ -23,3 +23,7 @@ The most common code smells are:
 
 # Tools
 - ### Class Diagram: https://www.visual-paradigm.com/solution/freeumltool/
+
+# Documents
+- https://sourcemaking.com/design_patterns
+- https://refactoring.guru/design-patterns
